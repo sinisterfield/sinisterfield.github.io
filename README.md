@@ -11,3 +11,11 @@ Lastest experiments, tools and services from Lamoreaux Labs.
 # Run site locally
 npm run dev
 ```
+
+# Deploy
+
+The project uses github actions to deploy
+
+```bash
+npm run build
+```
