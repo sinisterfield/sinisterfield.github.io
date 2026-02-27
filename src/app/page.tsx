@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geologica-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-
+   
         <svg
           className="sm:-ml-4"
           viewBox="0 0 192 192"
@@ -21,12 +21,12 @@ export default function Home() {
             SINISTER FIELD
         </h1>
 
-        
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        
-      
+
+      <footer className="row-start-3 w-screen -mx-8 sm:-mx-20 px-8 sm:px-20 flex gap-6 flex-wrap items-center justify-between border-t py-4">        
+        <span className="text-xs font-light ml-auto" style={{ color: 'var(--fg-muted)' }}><a href="https://www.briglamoreaux.com/">Contact</a></span>
       </footer>
+
     </div>
   );
 }

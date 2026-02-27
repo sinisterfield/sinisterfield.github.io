@@ -27,3 +27,8 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+footer {
+  background: var(--foreground);
+  color: var(--background);
+}
