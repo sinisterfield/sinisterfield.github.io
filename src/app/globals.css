@@ -12,6 +12,12 @@ svg .sinisterbox, svg .sinisterline { fill: #333333; }
 svg .dexterbox, svg .dexterline { fill: #f9f9f9; }
 svg .sinisterbox, svg .dexterbox { stroke: #333333; }
 
+
+footer {
+  background: #c8c8c8;
+  color: #f9f9f9;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #333333;
@@ -21,14 +27,15 @@ svg .sinisterbox, svg .dexterbox { stroke: #333333; }
   svg .sinisterbox, svg .sinisterline { fill: #f9f9f9; }
   svg .dexterbox, svg .dexterline { fill: #333333; }
   svg .sinisterbox, svg .dexterbox { stroke: #f9f9f9; }
+
+  footer {
+    background: #646464;
+    color: #333333;
+    font-weight: bolder;
+  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-}
-
-footer {
-  background: var(--foreground);
-  color: var(--background);
 }

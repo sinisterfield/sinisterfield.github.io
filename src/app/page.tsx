@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geologica-sans)]">
+    <div className="grid grid-rows-[20px_1fr_auto] items-center justify-items-center min-h-screen px-8 pt-8 sm:px-20 sm:pt-20 gap-16 font-[family-name:var(--font-geologica-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
    
         <svg
@@ -23,10 +23,11 @@ export default function Home() {
 
       </main>
 
-      <footer className="row-start-3 w-screen -mx-8 sm:-mx-20 px-8 sm:px-20 flex gap-6 flex-wrap items-center justify-between border-t py-4">        
-        <span className="text-xs font-light ml-auto" style={{ color: 'var(--fg-muted)' }}><a href="https://www.briglamoreaux.com/">Contact</a></span>
+      <footer className="row-start-3 w-screen -mx-8 sm:-mx-20 px-8 sm:px-20 flex gap-6 flex-wrap items-center justify-between py-1">        
+        <span className="text-xs font-light ml-auto"><a href="https://www.briglamoreaux.com/">Contact</a></span>
       </footer>
 
     </div>
+    
   );
 }
