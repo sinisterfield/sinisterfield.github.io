@@ -2,28 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #f9f9f9;
-    --foreground: #333333;
-  }
-  @layer base {
-    .sinisterbox, .sinisterline { fill: #333333; }
-    .dexterbox, .dexterline { fill: #f9f9f9; }
-    .sinisterbox, .dexterbox { stroke: #333333; }
-  }
+:root {
+  --background: #f9f9f9;
+  --foreground: #333333;
 }
+
+/* Light mode defaults (no media query needed) */
+svg .sinisterbox, svg .sinisterline { fill: #333333; }
+svg .dexterbox, svg .dexterline { fill: #f9f9f9; }
+svg .sinisterbox, svg .dexterbox { stroke: #333333; }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #333333;
     --foreground: #f9f9f9;
   }
-  @layer base {
-    .sinisterbox, .sinisterline { fill: #f9f9f9; }
-    .dexterbox, .dexterline { fill: #333333; }
-    .sinisterbox, .dexterbox { stroke: #f9f9f9; }
-  }
+
+  svg .sinisterbox, svg .sinisterline { fill: #f9f9f9; }
+  svg .dexterbox, svg .dexterline { fill: #333333; }
+  svg .sinisterbox, svg .dexterbox { stroke: #f9f9f9; }
 }
 
 body {
