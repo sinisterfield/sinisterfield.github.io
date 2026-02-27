@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #f9f9f9;
-  --foreground: #333333;
-}
-
-@layer base {
-  .sinisterbox, .sinisterline{ fill: #333333; }
-  .dexterbox, .dexterline{  fill: #f9f9f9; }
-  .sinisterbox{ stroke: #333333;}
-  .dexterbox { stroke: #333333;}
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f9f9f9;
+    --foreground: #333333;
+  }
+  @layer base {
+    .sinisterbox, .sinisterline { fill: #333333; }
+    .dexterbox, .dexterline { fill: #f9f9f9; }
+    .sinisterbox, .dexterbox { stroke: #333333; }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,17 +19,14 @@
     --background: #333333;
     --foreground: #f9f9f9;
   }
-
   @layer base {
-    .sinisterbox, .sinisterline{ fill: #f9f9f9;}
-    .dexterbox, .dexterline{ fill: #333333; }
-    .sinisterbox{ stroke: #f9f9f9; }
-    .dexterbox { stroke: #f9f9f9; }
+    .sinisterbox, .sinisterline { fill: #f9f9f9; }
+    .dexterbox, .dexterline { fill: #333333; }
+    .sinisterbox, .dexterbox { stroke: #f9f9f9; }
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  /* font-family: 'Geologica', Arial, sans-serif; */
 }
