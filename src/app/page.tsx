@@ -4,6 +4,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
 
         <svg
+          className="sm:-ml-4"
           viewBox="0 0 192 192"
           width="192"
           height="192"
