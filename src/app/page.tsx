@@ -4,13 +4,90 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geologica-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          src="/icon-192.svg"
-          alt="Sinister Field logo"
-          width={192}
-          height={192}
-          priority
-        />
+
+        <svg
+          viewBox="0 0 192 192"
+          width="192"
+          height="192"
+          version="1.1"
+          id="svg4"
+          xml:space="preserve"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:svg="http://www.w3.org/2000/svg"><style
+            id="style1">
+              @media (prefers-color-scheme: light) {
+                .sinisterbox, .sinisterline{
+                    fill: #333333;
+                }
+                .dexterbox, .dexterline{
+                    fill: #f9f9f9;
+                }
+
+                .sinisterbox{ 
+                    stroke: #333333;
+                }
+                .dexterbox {
+                    stroke: #333333;
+                }
+              }  
+
+              @media (prefers-color-scheme: dark) {
+
+                .sinisterbox, .sinisterline{
+                    fill: #f9f9f9;
+                }
+                .dexterbox, .dexterline{
+                    fill: #333333;
+                }
+
+                .sinisterbox{ 
+                    stroke: #f9f9f9;
+                }
+                .dexterbox {
+                    stroke: #f9f9f9;
+                }
+              }
+            
+          </style>
+          <!-- boxes --><rect
+            x="24"
+            y="40"
+            width="72"
+            height="112"
+            class="sinisterbox"
+            fill="#333333"
+            stroke="#333333"
+            stroke-width="16"
+            id="rect1"
+            rx="8"
+            ry="8" /><rect
+            x="96"
+            y="40"
+            width="72"
+            height="112"
+            class="dexterbox"
+            fill="#f9f9f9"
+            stroke="#333333"
+            stroke-width="16"
+            id="rect2"
+            rx="8"
+            ry="8" /><!-- lines --><rect
+            x="80"
+            y="16"
+            width="16"
+            height="160"
+            class="sinisterline"
+            fill="#333333"
+            id="rect3" /><rect
+            x="96"
+            y="16"
+            width="16"
+            height="160"
+            class="dexterline"
+            fill="#f9f9f9"
+            id="rect4"
+            style=""/></svg>
         
         <h1 className="text-4xl sm:text-5xl font-bold text-center sm:text-left">
             SINISTER FIELD
